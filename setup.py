@@ -1,24 +1,24 @@
 # Copyright (C) 2021 Tristan Havelick
 #
-# This file is part of python-ssdeep-stubs.
+# This file is part of ssdeep-stubs.
 #
-# python-ssdeep-stubs is free software: you can redistribute it and/or modify
+# ssdeep-stubs is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 2 of the License, or
 # (at your option) any later version.
 #
-# python-ssdeep-stubs is distributed in the hope that it will be useful,
+# ssdeep-stubs is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with python-ssdeep-stubs.  If not, see <http://www.gnu.org/licenses/>.
+# along with ssdeep-stubs.  If not, see <http://www.gnu.org/licenses/>.
 
 from setuptools import setup
 import os
 
-name = "python-ssdeep-stubs"
+name = "ssdeep-stubs"
 description = "python-ssdeep stubs and mypy plugin"
 
 install_instructions = """\
@@ -30,7 +30,7 @@ Changelog:
 ## Installation
 
 ```
-pip install python-ssdeep-stubs
+pip install ssdeep-stubs
 ```
 
 """
@@ -49,7 +49,7 @@ def find_stub_files():
 
 
 setup(
-    name="python-ssdeep-stubs",
+    name="ssdeep-stubs",
     version="0.0.1",
     description=description,
     long_description=install_instructions,
@@ -60,7 +60,7 @@ setup(
     url="https://github.com/thavelick/python-ssdeep-stubs",
     py_modules=[],
     install_requires=["mypy"],
-    packages=["python-ssdeep-stubs"],
-    package_data={"python-ssdeep-stubs": find_stub_files()},
+    packages=["ssdeep-stubs"],
+    package_data={"ssdeep-stubs": find_stub_files()},
     classifiers=["Development Status :: 3 - Alpha", "Programming Language :: Python :: 3",],
 )
